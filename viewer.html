@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevermore Map Viewer</title>
+    <!-- OpenSeadragon JS (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0;">
+    <h1>Nevermore Map Deep Zoom Viewer</h1>
+    <div id="openseadragon" style="width: 100%; height: 80vh;"></div>
+    
+    <script>
+        OpenSeadragon({
+            id: "openseadragon",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/images/",
+            tileSources: "./Nevermore_Map_Files.dzi"
+        });
+    </script>
+</body>
+</html>
