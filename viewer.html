@@ -6,10 +6,24 @@
     <title>Nevermore Map Viewer</title>
     <!-- OpenSeadragon JS (CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
+    <style>
+        /* Remove any margin or padding from the body and html to eliminate any space */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;  /* Ensure the page takes up the full height of the browser */
+        }
+
+        /* Make the OpenSeadragon viewer fill the screen */
+        #openseadragon {
+            width: 100%;
+            height: 100vh;  /* Full viewport height */
+        }
+    </style>
 </head>
-<body style="margin: 0; padding: 0;">
-    <h1>Nevermore World Map</h1>
-    <div id="openseadragon" style="width: 100%; height: 80vh;"></div>
+<body>
+    <!-- The <h1> is now removed for a cleaner layout -->
+    <div id="openseadragon"></div>
     
     <script>
         OpenSeadragon({
